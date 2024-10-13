@@ -45,6 +45,7 @@
             clear = new Button();
             result = new Button();
             divide = new Button();
+            num0 = new Button();
             SuspendLayout();
             // 
             // openFileDialog1
@@ -66,7 +67,7 @@
             num1.TabIndex = 8;
             num1.Text = "1";
             num1.UseVisualStyleBackColor = true;
-            num1.Click += num1_Click;
+            num1.Click += numButton_Click;
             // 
             // num3
             // 
@@ -76,6 +77,7 @@
             num3.TabIndex = 9;
             num3.Text = "3";
             num3.UseVisualStyleBackColor = true;
+            num3.Click += numButton_Click;
             // 
             // num2
             // 
@@ -85,6 +87,7 @@
             num2.TabIndex = 10;
             num2.Text = "2";
             num2.UseVisualStyleBackColor = true;
+            num2.Click += numButton_Click;
             // 
             // num5
             // 
@@ -94,6 +97,7 @@
             num5.TabIndex = 13;
             num5.Text = "5";
             num5.UseVisualStyleBackColor = true;
+            num5.Click += numButton_Click;
             // 
             // num6
             // 
@@ -103,6 +107,7 @@
             num6.TabIndex = 12;
             num6.Text = "6";
             num6.UseVisualStyleBackColor = true;
+            num6.Click += numButton_Click;
             // 
             // num4
             // 
@@ -112,6 +117,7 @@
             num4.TabIndex = 11;
             num4.Text = "4";
             num4.UseVisualStyleBackColor = true;
+            num4.Click += numButton_Click;
             // 
             // num8
             // 
@@ -121,6 +127,7 @@
             num8.TabIndex = 16;
             num8.Text = "8";
             num8.UseVisualStyleBackColor = true;
+            num8.Click += numButton_Click;
             // 
             // num9
             // 
@@ -130,6 +137,7 @@
             num9.TabIndex = 15;
             num9.Text = "9";
             num9.UseVisualStyleBackColor = true;
+            num9.Click += numButton_Click;
             // 
             // num7
             // 
@@ -139,60 +147,78 @@
             num7.TabIndex = 14;
             num7.Text = "7";
             num7.UseVisualStyleBackColor = true;
+            num7.Click += numButton_Click;
             // 
             // minus
             // 
-            minus.Location = new Point(136, 269);
+            minus.Location = new Point(259, 269);
             minus.Name = "minus";
-            minus.Size = new Size(113, 70);
+            minus.Size = new Size(56, 70);
             minus.TabIndex = 19;
             minus.Text = "-";
             minus.UseVisualStyleBackColor = true;
+            minus.Click += operationButton_Click;
             // 
             // multiply
             // 
-            multiply.Location = new Point(259, 269);
+            multiply.Location = new Point(321, 269);
             multiply.Name = "multiply";
-            multiply.Size = new Size(113, 70);
+            multiply.Size = new Size(51, 70);
             multiply.TabIndex = 18;
             multiply.Text = "*";
             multiply.UseVisualStyleBackColor = true;
+            multiply.Click += operationButton_Click;
             // 
             // plus
             // 
-            plus.Location = new Point(12, 269);
+            plus.Location = new Point(198, 269);
             plus.Name = "plus";
-            plus.Size = new Size(113, 70);
+            plus.Size = new Size(51, 70);
             plus.TabIndex = 17;
             plus.Text = "+";
             plus.UseVisualStyleBackColor = true;
+            plus.Click += operationButton_Click;
             // 
             // clear
             // 
-            clear.Location = new Point(136, 345);
+            clear.Location = new Point(12, 345);
             clear.Name = "clear";
-            clear.Size = new Size(113, 70);
+            clear.Size = new Size(180, 70);
             clear.TabIndex = 22;
             clear.Text = "C";
             clear.UseVisualStyleBackColor = true;
+            clear.Click += clear_Click;
             // 
             // result
             // 
-            result.Location = new Point(259, 345);
+            result.Location = new Point(198, 345);
             result.Name = "result";
-            result.Size = new Size(113, 70);
+            result.Size = new Size(174, 70);
             result.TabIndex = 21;
             result.Text = "=";
             result.UseVisualStyleBackColor = true;
+            result.Click += result_Click;
             // 
             // divide
             // 
-            divide.Location = new Point(12, 345);
+            divide.ForeColor = SystemColors.ActiveCaptionText;
+            divide.Location = new Point(136, 269);
             divide.Name = "divide";
-            divide.Size = new Size(113, 70);
+            divide.Size = new Size(56, 70);
             divide.TabIndex = 20;
             divide.Text = "/";
             divide.UseVisualStyleBackColor = true;
+            divide.Click += operationButton_Click;
+            // 
+            // num0
+            // 
+            num0.Location = new Point(12, 269);
+            num0.Name = "num0";
+            num0.Size = new Size(113, 70);
+            num0.TabIndex = 23;
+            num0.Text = "0";
+            num0.UseVisualStyleBackColor = true;
+            num0.Click += numButton_Click;
             // 
             // Form1
             // 
@@ -201,6 +227,7 @@
             AutoSize = true;
             BackColor = Color.FromArgb(17, 17, 17);
             ClientSize = new Size(384, 429);
+            Controls.Add(num0);
             Controls.Add(clear);
             Controls.Add(result);
             Controls.Add(divide);
@@ -244,5 +271,6 @@
         private Button clear;
         private Button result;
         private Button divide;
+        private Button num0;
     }
 }
